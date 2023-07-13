@@ -33,13 +33,13 @@ sing-box is a new general agent platform, benchmarking *ray core and clash, and 
 For more content on sing-box, please click here: point_right: [official site](https://sing-box.sagernet.org/)
 # A key installation  
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/MiSaturo/sing-box-yes-english/master/install.sh)
 ```
 After execution, the management menu will be displayed by itself, and the latest release version will be automatically installed through the menu option `1`. At the same time, you can also install the latest version through `sing-box install`
 
 If you want to install a specific version (including Pre-release), please use the following command, replace `1.1-beta8` with a specific version number
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh) install 1.1-beta8
+bash <(curl -Ls https://raw.githubusercontent.com/MiSaturo/sing-box-yes-english/master/install.sh) install 1.1-beta8
 ```
 If you want to update to the latest release version after installation and keep the original configuration file, please use the following command or use the menu option `2` to update
 ```
@@ -123,11 +123,11 @@ sing-box run -c client_config.json
 ```
 
 # Configuration example
-- [shadowsocks2022](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022)
-- [shadowsocks2022+shadowTLS](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022_with_shadowTLS)
-- [trojan](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/trojan)
-- [hysteria](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/hysteria)
-- [vmess](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/vmess)
+- [shadowsocks2022](https://github.com/MiSaturo/sing-box-yes-english/tree/main/shadowsocks2022)
+- [shadowsocks2022+shadowTLS](https://github.com/MiSaturo/sing-box-yes-english/tree/main/shadowsocks2022_with_shadowTLS)
+- [trojan](https://github.com/MiSaturo/sing-box-yes-english/tree/main/trojan)
+- [hysteria](https://github.com/MiSaturo/sing-box-yes-english/tree/main/hysteria)
+- [vmess](https://github.com/MiSaturo/sing-box-yes-english/tree/main/vmess)
 
 When using, please modify the configuration of the server and client according to the template
 
@@ -149,4 +149,4 @@ At present, sing-box is still under development, and the client support is not y
 
 # star:star2:
 
-[![Stargazers over time](https://starchart.cc/FranzKafkaYu/sing-box-yes.svg)](https://starchart.cc/FranzKafkaYu/sing-box-yes)
+[![Stargazers over time](https://starchart.cc/MiSaturo/sing-box-yes-english.svg)](https://starchart.cc/MiSaturo/sing-box-yes-english)
