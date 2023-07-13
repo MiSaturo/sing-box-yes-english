@@ -1,157 +1,152 @@
 # sing-box-yes
-CN|[EN](./README_EN.md)  
 
-方便快捷的安装、管理sing-box:100:  
+Convenient and quick installation and management sing-box:100:
 
-sing-box是一个新的通用代理平台,对标*ray core与clash,且具有许多新的[特性](https://sing-box.sagernet.org/features/),目前支持以下协议:  
+sing-box is a new general agent platform, benchmarking *ray core and clash, and has many new [features](https://sing-box.sagernet.org/features/), currently supports the following protocols:
 
-`入站`： 
-- Shadowsocks(including shadowsocks2022)    
-- Vmess  
-- Trojan  
-- Naive  
-- Hysteria  
-- ShadowTLS  
-- Tun  
-- Redirect  
-- TProxy  
-- Socks  
-- HTTP  
+`inbound`:
+- Shadowsocks (including shadowsocks2022)
+- Vmess
+-Trojan
+-Naive
+-Hysteria
+- ShadowTLS
+-Tun
+-Redirect
+-TProxy
+-Socks
+-HTTP
 
-`出站`:  
-- Shadowsocks(including shadowsocks2022)    
-- Vmess  
-- Trojan 
-- Wireguard  
-- Hysteria  
-- ShadowTLS  
-- ShadowsocksR  
-- VLESS  
-- Tor  
-- SSH
-- DNS 
+`outbound`:
+- Shadowsocks (including shadowsocks2022)
+- Vmess
+-Trojan
+-Wireguard
+-Hysteria
+- ShadowTLS
+- ShadowsocksR
+-VLESS
+-Tor
+-SSH
+- DNS
 
-针对sing-box的更多内容,请点击这里:point_right:[official site](https://sing-box.sagernet.org/)
-# 一键安装  
+For more content on sing-box, please click here: point_right: [official site](https://sing-box.sagernet.org/)
+# A key installation  
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh)
-```    
-执行后会自行显示管理菜单，通过菜单选项`1`将会自动安装最新release版本。与此同时，你也可以通过`sing-box install`来安装最新版本    
+```
+After execution, the management menu will be displayed by itself, and the latest release version will be automatically installed through the menu option `1`. At the same time, you can also install the latest version through `sing-box install`
 
-如果你想安装某个特定版本(包括Pre-release),请使用以下命令,将`1.1-beta8`替换为特定版本号即可    
+If you want to install a specific version (including Pre-release), please use the following command, replace `1.1-beta8` with a specific version number
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh) install 1.1-beta8
-```  
-如果在安装后想更新到最新的release版本,且保留原有的配置文件,请使用如下命令或通过菜单选项`2`进行更新  
 ```
-sing-box update 
+If you want to update to the latest release version after installation and keep the original configuration file, please use the following command or use the menu option `2` to update
 ```
-如果在安装后想更新到某个特定版本(包括Pre-release),且保留原有的配置文件,请使用如下命令进行更新,将`1.1-beta8`替换为特定版本号即可
+sing-box update
+```
+If you want to update to a specific version (including Pre-release) after installation and keep the original configuration file, please use the following command to update, replace `1.1-beta8` with a specific version number
 ```
 sing-box update 1.1-beta8
 ```
-# 快捷方式
-在服务器command line内输入sing-box回车即可进入管理菜单,当前菜单内容如下所示：  
+# A shortcut
+Enter sing-box in the server command line and press Enter to enter the management menu. The current menu content is as follows:
 
 ```
-  sing-box-v0.0.1 管理脚本
-  0. 退出脚本
-————————————————
-  1. 安装 sing-box 服务
-  2. 更新 sing-box 服务
-  3. 卸载 sing-box 服务
-  4. 启动 sing-box 服务
-  5. 停止 sing-box 服务
-  6. 重启 sing-box 服务
-  7. 查看 sing-box 状态
-  8. 查看 sing-box 日志
-  9. 清除 sing-box 日志
-  A. 检查 sing-box 配置
-————————————————
-  B. 设置 sing-box 开机自启
-  C. 取消 sing-box 开机自启
-  D. 设置 sing-box 定时清除日志&重启
-  E. 取消 sing-box 定时清除日志&重启
-————————————————
-  F. 一键开启 bbr 
-  G. 一键申请SSL证书
+   sing-box-v0.0.1 management script
+   0. Exit script
+———————————————
+   1. Install sing-box service
+   2. Update the sing-box service
+   3. Uninstall the sing-box service
+   4. Start the sing-box service
+   5. Stop the sing-box service
+   6. Restart the sing-box service
+   7. Check the status of the sing-box
+   8. Check the sing-box log
+   9. Clear the sing-box log
+   A. Check the sing-box configuration
+———————————————
+   B. Set the sing-box to start automatically
+   C. Cancel the sing-box auto start
+   D. Set the sing-box to clear the log regularly & restart
+   E. Cancel the sing-box to clear the log regularly & reboot
+———————————————
+   F. One key to open bbr
+   G. Apply for an SSL certificate with one click
  
-[INF] 版本信息:sing-box 1.0.4.d2add33 (go1.19.1, linux/amd64, CGO disabled) 
-[INF] sing-box状态: 已运行
-[INF] sing-box是否开机自启: 是
-[INF] ##################### 
-[INF] 进程ID:303895 
-[INF] 运行时长：Sun 2022-09-18 14:52:42 CST; 1min 42s ago  
-[INF] 内存占用:14336 kB 
-[INF] ##################### 
-[INF] 配置文件路径:/usr/local/etc/sing-box/config.json 
-[INF] 可执行文件路径:/usr/local/bin/sing-box   
+[INF] Version information: sing-box 1.0.4.d2add33 (go1.19.1, linux/amd64, CGO disabled)
+[INF] sing-box status: running
+[INF] Whether the sing-box starts automatically at boot: Yes
+[INF] #######################
+[INF] Process ID: 303895
+[INF] Run time: Sun 2022-09-18 14:52:42 CST; 1min 42s ago
+[INF] Memory usage: 14336 kB
+[INF] #######################
+[INF] Configuration file path: /usr/local/etc/sing-box/config.json
+[INF] Executable file path: /usr/local/bin/sing-box
 
-```   
-如果你厌倦了频繁输入数字,脚本也提供了一些快捷命令,具体如下：  
 ```
-  sing-box              - 显示快捷菜单 (功能更多)  
-  sing-box start        - 启动 sing-box服务  
-  sing-box stop         - 停止 sing-box服务  
-  sing-box restart      - 重启 sing-box服务  
-  sing-box status       - 查看 sing-box 状态  
-  sing-box enable       - 设置 sing-box 开机自启  
-  sing-box disable      - 取消 sing-box 开机自启  
-  sing-box log          - 查看 sing-box 日志  
-  sing-box clear        - 清除 sing-box 日志  
-  sing-box update       - 更新 sing-box 服务  
-  sing-box install      - 安装 sing-box 服务  
-  sing-box uninstall    - 卸载 sing-box 服务  
+If you are tired of typing numbers frequently, the script also provides some shortcut commands, as follows:
+```
+   sing-box - Show context menu (more features)
+   sing-box start - start the sing-box service
+   sing-box stop - stop the sing-box service
+   sing-box restart - restart the sing-box service
+   sing-box status - view the sing-box status
+   sing-box enable - set the sing-box to start automatically at boot
+   sing-box disable - disable the sing-box autostart
+   sing-box log - view the sing-box log
+   sing-box clear - clears the sing-box log
+   sing-box update - update the sing-box service
+   sing-box install - Install the sing-box service
+   sing-box uninstall - Uninstall the sing-box service
 ```
 
-# 使用说明  
-安装完sing-box后,你可能需要遵循以下几步方能正常使用：  
+# Instructions for use  
+After installing sing-box, you may need to follow the following steps to use it normally:
 
-1)配置服务端：脚本默认路径为`/usr/local/etc/sing-box/config.json`,请使用`nano`或者`vim`进行编辑,具体的内容可以参考下方的配置样例部分,请依据个人实际情况进行填写  
-2)配置检查：编辑保存好配置文件后，尽可能使用脚本提供的配置文件检查功能进行检查，该功能会对配置的格式进行检查确认，请确保检查通过  
-3)重启sing-box：配置检查通过后，可以使用脚本中的重启功能重启`sing-box`，观察`sing-box`是否正常工作,请确保其正常工作  
-4)下载客户端：请根据运行环境自行下载客户端，解压获得可执行文件  
-5)下载geo数据：客户端运行需要`geoip.db`,`geosite.db`文件，请手动下载geo数据放入与`sing-box`执行文件同级目录下  
-6)配置客户端：请将`client_config.json`放入与`sing-box`可执行文件同级目录下,对照配置模板并结合个人实际情况进行修改填写  
-7)运行客户端：  
-Windows下请以管理员打开命令行工具（推荐PowerShell），使用如下命令运行客户端：  
+1) Configure the server: The default path of the script is `/usr/local/etc/sing-box/config.json`, please use `nano` or `vim` to edit, the specific content can refer to the configuration sample section below , please fill in according to your actual situation
+2) Configuration check: After editing and saving the configuration file, use the configuration file checking function provided by the script to check as much as possible. This function will check and confirm the format of the configuration. Please ensure that the check passes
+3) Restart sing-box: After the configuration check is passed, you can use the restart function in the script to restart `sing-box` to observe whether `sing-box` works normally, please make sure it works normally
+4) Download the client: Please download the client by yourself according to the operating environment, and decompress to obtain the executable file
+5) Download geo data: `geoip.db`, `geosite.db` files are required for client operation, please manually download geo data and put them in the same directory as `sing-box` execution file
+6) Configure the client: Please put `client_config.json` into the directory at the same level as the `sing-box` executable file, and modify it according to the configuration template and your actual situation.
+7) Run the client:
+Under Windows, please open the command line tool (PowerShell is recommended) as an administrator, and use the following command to run the client:
 ```
-sing-box.exe run -c client_config.json  
-```  
-Linux下请以Root用户运行客户端:
+sing-box.exe run -c client_config.json
+```
+Under Linux, please run the client as root user:
 ```
 sing-box run -c client_config.json
-```  
+```
 
-# 配置样例    
-- [shadowsocks2022](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022)  
-- [shadowsocks2022+shadowTLS](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022_with_shadowTLS)  
-- [trojan](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/trojan)  
-- [hysteria](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/hysteria)   
-- [vmess](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/vmess)  
+# Configuration example
+- [shadowsocks2022](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022)
+- [shadowsocks2022+shadowTLS](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/shadowsocks2022_with_shadowTLS)
+- [trojan](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/trojan)
+- [hysteria](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/hysteria)
+- [vmess](https://github.com/FranzKafkaYu/sing-box-yes/tree/main/vmess)
 
-使用时请自行按照模板修改服务端与客户端的配置    
+When using, please modify the configuration of the server and client according to the template
 
-# 支持系统  
-- Ubuntu  
-- Centos  
-- Debian  
-- Rocky  
-- Almalinux    
+# support system  
+- Ubuntu
+-Centos
+- Debian
+-Rocky
+-Almalinux
 
-# 客户端  
+# client
 
-目前sing-box仍在开发中，客户端支持尚未完善，大多数时候你都可以通过手动运行程序来进行使用。如果你需要一些客户端，可以尝试以下客户端  
-- [V2rayN](https://github.com/2dust/v2rayN/releases/tag/5.36)  
-- [SingBox](https://github.com/daodao97/SingBox)  
+At present, sing-box is still under development, and the client support is not yet complete. Most of the time, you can use it by manually running the program. If you need some clients, you can try the following clients
+- [V2rayN](https://github.com/2dust/v2rayN/releases/tag/5.36)
+- [SingBox](https://github.com/daodao97/SingBox)
 
-# 致谢  
-[SagerNet/sing-box](https://github.com/SagerNet/sing-box)  
+# Acknowledgments
+[SagerNet/sing-box](https://github.com/SagerNet/sing-box)
 
 # star:star2:
 
 [![Stargazers over time](https://starchart.cc/FranzKafkaYu/sing-box-yes.svg)](https://starchart.cc/FranzKafkaYu/sing-box-yes)
-
-
-
-
